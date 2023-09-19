@@ -232,7 +232,9 @@ class _HomepageState extends State<Homepage> {
                   ),*/
                             ),
                             TextButton(
-                              onPressed: () {},
+                              onPressed: () {
+                                Navigator.push(context, MaterialPageRoute(builder: (_)=> subscription(),));
+                              },
                               style: TextButton.styleFrom(
                                 //<-- SEE HERE
                                 side:
@@ -714,6 +716,7 @@ class _HomepageState extends State<Homepage> {
               const Text(
                 'All rights reserved to Eleven11',
                 style: TextStyle(
+                  fontSize: 14,
                     fontFamily: 'Poppins', fontWeight: FontWeight.w500),
               ),
               const SizedBox(

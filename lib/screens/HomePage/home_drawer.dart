@@ -1,3 +1,4 @@
+import 'package:Eleven11/screens/Contactus/contact.dart';
 import 'package:Eleven11/screens/otp_page.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
@@ -102,9 +103,9 @@ class HomeDrawer extends StatelessWidget {
               InkWell(
                 onTap: () {
                   goToNextPage(
-                      context: context, page: OtpPage(text: '1235',
+                      context: context, page: contact(),
 
-                  ));
+                  );
                 },
                 child: Row(
                   children: [

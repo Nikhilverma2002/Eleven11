@@ -14,66 +14,45 @@ class _subscriptionState extends State<subscription> {
   PageController controller = PageController();
   final List<MyHomePageModel> _modelList = [
     MyHomePageModel(
-      image: "assets/house.png",
-      title: "Builder (Silver)",
+      image: "assets/lottie/crm.png",
+      title: "Standard",
       desc: [
-        "Property promotion on website",
-        "Photoshoot & Reels of property",
-        "Google & meta ads.",
-        "Relationship Manager for Assistance",
-        "Customer Support",
-        "Privacy to Leads"
+        "The simple CRM suite with marketing, sales, and service for small teams"
       ],
       color: Color(0xffC8C8C8),
-      price: "\u{20B9}${4999}/3Mo.   ",
-      line: "10,000",
+      price: "\u{20B9}${800}/Mo.   ",
+      line: "1,000",
     ),
     MyHomePageModel(
-      image: "assets/residential.png",
-      title: "Builder (Gold)",
+      image: "assets/lottie/crm.png",
+      title: "Professional",
       desc: [
-        "All features of silver plan",
-        "Email & Whatsapp Broadcasting",
-        "Personal field assistance",
-        "Showing property on behalf",
-        "Reels post on instagram page",
-        "Verified Badge"
+      "Complete CRM for any size team"
       ],
       color: Color(0xffF9B31A),
-      price: "\u{20B9}${9999}/3Mo.   ",
-      line: "20,000",
+      price: "\u{20B9}${1400}/Mo.   ",
+      line: "2,000",
     ),
     MyHomePageModel(
-      image: "assets/broker.png",
-      title: "Agent",
+      image: "assets/lottie/crm.png",
+      title: "Enterprise",
       desc: [
-        "3 free listing property [For 1year]",
-        "One featured ad.",
-        "Customer Support",
-        "Verified badge"
-            "E-card",
-        /* "<Mystery Box Offer>",
-        "   1 Lead @ \u{20B9}${99} only",
-        "   10 Leads @ \u{20B9}${499} only",
-        "   25 Leads @ \u{20B9}${999} only",*/
+        "Deeply customizable sales CRM for your business"
       ],
-
       color: Color(0xff98d8f8),
-      price: "\u{20B9}${999}[Lifetime]   ",
-      line: "10,000",
+      price: "\u{20B9}${2400}/Mo.   ",
+      line: "3,000",
     ),
 
     MyHomePageModel(
-      image: "assets/money.png",
-      title: "Buyer",
+      image: "assets/lottie/crm.png",
+      title: "Ultimate",
       desc: [
-        "10 property will be shown by Relationship Manager",
-        "Assured gifts on referral",
-        "We will give you leads till 90days @\u{20B9}${9999} with Moneyback (T&C)*"
+       "The ultimate platform for growth"
       ],
       color: Color(0xffD6E5FF),
-      price: "\u{20B9}${999}/3Mo.  ",
-      line: "\u{20B9}${4999}",
+      price: "\u{20B9}${2600}/Mo.  ",
+      line: "\u{20B9}${4000}",
     ),
   ];
 
@@ -188,14 +167,14 @@ class Pages extends StatelessWidget {
                             model.price,
                             style: const TextStyle(
                                 fontFamily: 'Poppins',
-                                fontSize: 15,
+                                fontSize: 17,
                                 color: Colors.white,
                                 fontWeight: FontWeight.bold),
                           ),
                           Text(
                             model.line,
                             style: const TextStyle(
-                                fontSize: 15,
+                                fontSize:20,
                                 fontFamily: 'Poppins',
                                 decoration: TextDecoration.lineThrough,
                                 color: Colors.white),
@@ -203,28 +182,28 @@ class Pages extends StatelessWidget {
                         ]),
                   ),
                 ),
-                const SizedBox(height: 20),
+                const SizedBox(height: 30),
                 Image.asset(
                   model.image,
-                  height: 75,
-                  width: 75,
+                  height: 100,
+                  width: 100,
                 ),
-                const SizedBox(height: 15),
+                const SizedBox(height: 30),
                 Text(
                   model.title,
                   textAlign: TextAlign.center,
                   style: const TextStyle(
                       fontFamily: 'Poppins',
-                      fontSize: 15,
+                      fontSize: 18,
                       fontWeight: FontWeight.bold),
                 ),
-                const SizedBox(height:8),
+                const SizedBox(height:15),
                 Padding(
                   padding: const EdgeInsets.fromLTRB(20, 0, 20, 0),
                   child: Text(
                     model.desc.map((x) => "• $x\n").reduce((x, y) => "$x$y"),
                     textAlign: TextAlign.start,
-                    style: const TextStyle(fontSize: 13, fontFamily: 'Poppins'),
+                    style: const TextStyle(fontSize: 15, fontFamily: 'Poppins'),
                   ),
                 ),
                 Container(
@@ -240,7 +219,7 @@ class Pages extends StatelessWidget {
                     child: const Text(
                       'Buy Plan',
                       style: TextStyle(
-                        fontSize: 13,
+                        fontSize: 15,
                         color: Colors.white,
                         fontFamily: 'Poppins',
                       ),
